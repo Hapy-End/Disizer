@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:gravity="center"
+	style="@style/TEd">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Отступы по краям"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Введите значение и нажмите 'ПРИМЕНИТЬ'"/>
+
+		</LinearLayout>
+
+		<ImageButton
+			android:src="@drawable/ic_refresh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/ButtonS2"
+			android:layout_alignParentEnd="true"
+			android:onClick="resetos"
+			android:id="@+id/ibeo"/>
+
+		<ImageButton
+			android:src="@drawable/ic_help"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/ButtonS2"
+			android:onClick="helpo"
+			android:layout_toLeftOf="@id/ibeo"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_horizontal">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			style="@style/TEd"
+			android:hint="СВЕРХУ"
+			android:gravity="center"
+			android:id="@+id/tos"
+			android:layout_weight="1.0"/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/TEd"
+			android:hint="СЛЕВА"
+			android:gravity="center"
+			android:id="@+id/los"
+			android:layout_weight="1.0"/>
+
+		<Button
+			android:textColor="?colorText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/set"
+			android:onClick="setos"
+			style="@style/ButtonS"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/TEd"
+			android:hint="СПРАВА"
+			android:gravity="center"
+			android:id="@+id/ros"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/TEd"
+			android:hint="СНИЗУ"
+			android:gravity="center"
+			android:id="@+id/bos"
+			android:layout_weight="1.0"/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

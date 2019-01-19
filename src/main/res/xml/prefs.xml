@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory android:title="@string/settings"/>
+
+    <CheckBoxPreference
+		android:icon="@drawable/icon"
+        android:key="@string/pref_sec"
+        android:summary="@string/pref_sec_summary"
+        android:title="@string/pref_sec_title" />
+	
+	<CheckBoxPreference
+		android:icon="@drawable/icon"
+        android:key="@string/pref_dpix"
+        android:summary="@string/pref_dpix_summary"
+        android:title="@string/pref_dpix_title" />
+
+    <CheckBoxPreference
+		android:icon="@drawable/icon"
+        android:key="@string/font_change"
+        android:summary="@string/font_change_summary"
+        android:title="@string/font_change_title" />
+	
+	<ListPreference
+		android:key="@string/pref_color"
+		android:title="@string/pref_color_title"
+		android:summary="@string/pref_color_summary"
+		android:defaultValue="Blue"
+		android:entries="@array/colors"
+		android:entryValues="@array/colors"
+		android:dialogTitle="@string/pref_color_dialogTitle" />
+	
+</PreferenceScreen>

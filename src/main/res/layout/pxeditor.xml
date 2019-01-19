@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	style="@style/TEd">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Разрешение экрана"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Введите значение и нажмите 'ПРИМЕНИТЬ'"/>
+
+		</LinearLayout>
+
+		<ImageButton
+			android:src="@drawable/ic_refresh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/ButtonS2"
+			android:layout_alignParentEnd="true"
+			android:onClick="resetpx"
+			android:id="@+id/ibep"/>
+
+		<ImageButton
+			android:src="@drawable/ic_help"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/ButtonS2"
+			android:onClick="helpp"
+			android:layout_toLeftOf="@id/ibep"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				style="@style/TEd">
+
+				<ImageView
+					android:src="@drawable/arrows"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_gravity="center"
+					android:rotation="90"/>
+
+				<EditText
+					android:id="@+id/w"
+					android:hint="@string/width"
+					style="@style/TEd"
+					android:layout_width="match_parent"
+					android:padding="5dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/TEd"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:src="@drawable/arrows"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_gravity="center"/>
+
+				<EditText
+					android:id="@+id/h"
+					android:hint="@string/height"
+					style="@style/TEd"
+					android:layout_width="match_parent"
+					android:padding="5dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"
+			android:gravity="bottom|right"
+			android:orientation="vertical">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/set"
+				android:onClick="setpx"
+				style="@style/ButtonS"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

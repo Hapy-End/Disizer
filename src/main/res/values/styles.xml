@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Splash" parent="@style/AppTheme">
+		<item name="android:windowBackground">@drawable/splash</item>
+	</style>
+	<style name="AppTheme" parent="@android:style/Theme.Holo.NoActionBar">
+		<item name="android:windowBackground">?colorPrimary</item>
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorPrimaryDark2">@color/colorPrimaryDark2</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorText">@color/colorText</item>
+	</style>
+	<style name="RTheme" parent="@style/AppTheme">
+		<item name="colorPrimary">@color/red5</item>
+		<item name="colorPrimaryDark">@color/red6</item>
+		<item name="colorPrimaryDark2">@color/red7</item>
+		<item name="colorAccent">@color/white1</item>
+		<item name="colorText">@color/white0</item>
+	</style>
+	<style name="DOTheme" parent="@style/AppTheme">
+		<item name="colorPrimary">@color/dorange5</item>
+		<item name="colorPrimaryDark">@color/dorange6</item>
+		<item name="colorPrimaryDark2">@color/dorange7</item>
+		<item name="colorAccent">@color/white1</item>
+		<item name="colorText">@color/white0</item>
+	</style>
+	<style name="BGTheme" parent="@style/AppTheme">
+		<item name="colorPrimary">@color/bluegrey5</item>
+		<item name="colorPrimaryDark">@color/bluegrey6</item>
+		<item name="colorPrimaryDark2">@color/bluegrey7</item>
+		<item name="colorAccent">@color/white1</item>
+		<item name="colorText">@color/white0</item>
+	</style>
+	<style name="GTheme" parent="@style/AppTheme">
+		<item name="colorPrimary">@color/grey5</item>
+		<item name="colorPrimaryDark">@color/grey6</item>
+		<item name="colorPrimaryDark2">@color/grey7</item>
+		<item name="colorAccent">@color/white1</item>
+		<item name="colorText">@color/white0</item>
+	</style>
+	<style name="DTheme" parent="@style/AppTheme">
+		<item name="colorPrimary">@color/black0</item>
+		<item name="colorPrimaryDark">@color/black1</item>
+		<item name="colorPrimaryDark2">@color/black2</item>
+		<item name="colorAccent">@color/white1</item>
+		<item name="colorText">@color/white0</item>
+	</style>
+	<style name="PTheme" parent="@style/AppTheme">
+		<item name="colorPrimary">@color/pink5</item>
+		<item name="colorPrimaryDark">@color/pink6</item>
+		<item name="colorPrimaryDark2">@color/pink7</item>
+		<item name="colorAccent">@color/white1</item>
+		<item name="colorText">@color/white0</item>
+	</style>
+	<style name="YTheme" parent="@style/AppTheme">
+		<item name="colorPrimary">@color/yellow5</item>
+		<item name="colorPrimaryDark">@color/yellow6</item>
+		<item name="colorPrimaryDark2">@color/yellow7</item>
+		<item name="colorAccent">@color/white1</item>
+		<item name="colorText">@color/white0</item>
+	</style>
+	<style name="ButtonS">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textColor">?colorPrimary</item>
+		<item name="android:background">?colorPrimaryDark2</item>
+	</style>
+	<style name="ButtonS2" parent="ButtonS">
+		<item name="android:padding">5dp</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+	<style name="TextV">
+		<item name="android:textAllCaps">true</item>
+		<item name="android:gravity">top</item>
+		<item name="android:textColor">?colorAccent</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+	</style>
+	<style name="TEd">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:inputType">number</item>
+		<item name="android:maxEms">5</item>
+		<item name="android:minEms">5</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:background">?colorPrimaryDark</item>
+		<item name="android:textColor">?colorAccent</item>
+		<item name="android:textColorHint">?colorPrimary</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textAlignment">center</item>
+		<item name="android:padding">10dp</item>
+	</style>
+</resources>

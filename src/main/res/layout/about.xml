@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:id="@+id/alll">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="20dp">
+
+			<ImageView
+				android:src="@drawable/ic_logo"
+				android:layout_width="150dp"
+				android:layout_height="150dp"
+				android:layout_marginTop="20dp"/>
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:typeface="monospace"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Версия: 2.1 (beta)"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="20dp">
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Автор и разработчик:"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="#UnPro"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textStyle="bold"
+				android:textColor="?colorPrimaryDark2"/>
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Пока что это всё..."
+				android:layout_margin="40dp"/>
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="🐾🐾🐾🐾😉🐾🐾🐾🐾"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

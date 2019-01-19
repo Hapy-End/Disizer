@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:gravity="center"
+	style="@style/TEd">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Плотность экрана"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+			<TextView
+				android:textColor="?colorText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Введите значение и нажмите 'ПРИМЕНИТЬ'"/>
+
+		</LinearLayout>
+
+		<ImageButton
+			android:src="@drawable/ic_refresh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/ButtonS2"
+			android:layout_alignParentEnd="true"
+			android:onClick="resetdpi"
+			android:id="@+id/ibed"/>
+
+		<ImageButton
+			android:src="@drawable/ic_help"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/ButtonS2"
+			android:onClick="helpd"
+			android:layout_toLeftOf="@id/ibed"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_horizontal">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			style="@style/TEd"
+			android:hint="ПЛОТНОСТЬ ЭКРАНА"
+			android:gravity="left"
+			android:id="@+id/dpied"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"/>
+
+		<Button
+			android:textColor="?colorText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/set"
+			android:onClick="setdens"
+			style="@style/ButtonS"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
